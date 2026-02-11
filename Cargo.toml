@@ -1,0 +1,14 @@
+[package]
+name = "fire"
+version = "0.1.1"
+edition = "2021"
+license = "Apache-2.0"
+repository = "https://github.com/horizonwiki/fire"
+authors = ["horizonwiki"]
+keywords = ["terminal", "animation", "rust", "ascii", "fire", "visualization"]
+
+[dependencies]
+libc = "0.2"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["wincon", "consoleapi", "handleapi"] }
