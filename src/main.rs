@@ -131,6 +131,9 @@ fn check_input() -> bool {
             let mut buf = [0u8; 32];
             let n = unsafe { libc::read(0, buf.as_mut_ptr() as *mut _, 32) };
             if n > 0 {
+                if buf[0] == 3 {
+                        return true;
+                }
                 if buf[0] ==  27 {
                     if n == 1 {   
                         return true;
