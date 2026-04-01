@@ -217,9 +217,9 @@ impl Theme {
     };
 }
 
-fn print_help() {
+fn print_help(program_name: &str) {
     println!("\nUsage:");
-    println!("  fire [options]\n");
+    println!("  {program_name} [options]\n");
     println!("Options:");
     println!("  -f,    --fps <number>  - set FPS (default: 30, range: 15-120)");
     println!("  -n-c,  --no-color      - disable colors (ASCII only)");
@@ -230,9 +230,9 @@ fn print_help() {
     println!("  -p,    --pink          - pink neon fire");
     println!("  -b,    --blue          - blue neon fire");
     println!("\nExamples:");
-    println!("  fire -i -f 60");
-    println!("  fire --blue --fps 45");
-    println!("  fire --no-color");
+    println!("  {program_name} -i -f 60");
+    println!("  {program_name} --blue --fps 45");
+    println!("  {program_name} --no-color");
     println!("\nControls:");
     println!("  ESC or Ctrl+C - exit");
 }
@@ -273,7 +273,7 @@ const fn precompile_chars() -> [[u8; 4]; 10] {
     let mut i = 0;
     while i < 10 {
         
-        let ch = Theme::CHARS[i] as u32; 
+        let ch = Theme::CHARS[i] as u32;  
         result[i][0] = ch as u8;
         result[i][1] = 0;
         result[i][2] = 0;
@@ -285,7 +285,8 @@ const fn precompile_chars() -> [[u8; 4]; 10] {
 
 fn main() -> io::Result<()> {
     let args: Vec<String> = env::args().collect();
-    
+    let program_name = args[0].as_str(); // for the current name in the help
+
     let mut theme = Theme::STD;
     let mut fps: u32 = 30;
     let mut use_color = true;
@@ -305,23 +306,23 @@ fn main() -> io::Result<()> {
                         i += 1;
                     } else {
                         eprintln!("Invalid FPS value: {}", args[i + 1]);
-                        print_help();
+                        print_help(program_name);
                         return Ok(());
                     }
                 } else {
                     eprintln!("Missing FPS value");
-                    print_help();
+                    print_help(program_name);
                     return Ok(());
                 }
             }
             "--no-color" | "-n-c" | "--nocolor" => use_color = false,
             "-h" | "--help"  => {
-                print_help();
+                print_help(program_name);
                 return Ok(());
             }
             _ => {
                 eprintln!("Invalid option: {}", args[i]);
-                print_help();
+                print_help(program_name);
                 return Ok(());
             }
         }
