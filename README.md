@@ -117,7 +117,7 @@ Download the compiled binary for your architecture from the **[Releases](https:/
 ### 🪟 Windows (Winget)
 
 ```powershell
-winget install fire
+winget install Horizon.Fire
 ```
 
 ---
