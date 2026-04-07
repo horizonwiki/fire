@@ -117,7 +117,7 @@ sudo cp target/release/fire /usr/local/bin/
 ### 🪟 Windows (Winget)
 
 ```powershell
-winget install fire
+winget install Horizon.Fire
 ```
 
 ---
