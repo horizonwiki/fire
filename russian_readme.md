@@ -9,8 +9,6 @@
 
 ---
 
-<div align="center">
-
 ### 🌐 Language / Язык
 
 [🇷🇺 Русский](./russian_readme.md) &nbsp;·&nbsp; **[🇺🇸 English](./README.md)**
