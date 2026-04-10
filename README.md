@@ -3,8 +3,9 @@
 # Fire >_
 
 ### Terminal fire animation written in Rust.
-<img width="1286" height="614" alt="изображение" src="https://github.com/user-attachments/assets/8b30b985-4555-439b-9592-bf884f8f096b" />
-
+<p align="center">
+  <img width="1286" height="614" alt="Fire CLI Splash" src=".github/images/splash.png" />
+</p>
 </div>
 
 ---
@@ -197,14 +198,13 @@ If you have any suggestions, fixes, or patches to share, feel free to:
 
 ### 🔹 Screenshots
 <p align="center">
-  <img width="800" alt="Fire CLI Screenshot" src="https://github.com/user-attachments/assets/6fd974d9-92e2-4823-b587-839e8b9a2bf1" />
+  <img width="800" alt="Fire CLI Screenshot" src=".github/images/example.png" />
 </p>
 
 ### 🔹 Screencasts
 <p align="center">
-  <img width="800" alt="Fire CLI Screencast" src="https://github.com/user-attachments/assets/65058d40-d445-45fa-bed8-fc5d37d275f1" />
+  <img width="800" alt="Fire CLI Screencast" src=".github/images/example.gif" />
 </p>
-
 
 
 
