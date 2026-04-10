@@ -88,12 +88,12 @@ cargo build --release
 Copy the compiled binary to a standard system directory:
 
 ```bash
-sudo cp target/release/fire /usr/local/bin/
+sudo cp target/release/fire-cli /usr/local/bin/
 ```
 
 #### 🪟 Windows
 
-1. Create a folder for your utilities (e.g., `C:\bin`) and move `fire.exe` from `target\release\` there.
+1. Create a folder for your utilities (e.g., `C:\bin`) and move `fire-cli.exe` from `target\release\` there.
 2. Press `Win + R`, type `sysdm.cpl`, go to **Advanced → Environment Variables**.
 3. Under "User environment variables", find `Path`, click "Edit", and add the path to your folder (e.g., `C:\bin`).
 4. Restart your terminal for the changes to take effect.
@@ -111,8 +111,8 @@ If you don't want to build from source, use the pre-built binaries:
 
 Download the compiled binary for your architecture from the **[Releases](https://github.com/horizonwiki/fire/releases)** page.
 
-* **Windows**: Download `fire.exe`, move it to a convenient folder, and add that folder to your system `PATH`.
-* **Linux/macOS**: Download `fire`, make it executable (`chmod +x fire`), and move it to `/usr/local/bin/`.
+* **Windows**: Download `fire-cli.exe`, move it to a convenient folder, and add that folder to your system `PATH`.
+* **Linux/macOS**: Download `fire-cli`, make it executable (`chmod +x fire-cli`), and move it to `/usr/local/bin/`.
 
 ### 🪟 Windows (Winget)
 
@@ -124,37 +124,58 @@ winget install Horizon.Fire
 
 ## 🎮 Usage & Controls
 
-Launch the animation with the simple `fire` command. Use the following flags for fine-tuning:
+Launch the animation with the simple `fire-cli` command. Use the following flags for fine-tuning:
 
 ### ⚙️ Launch Options
 
 | Flag | Full Name | Description | Values |
 | :--- | :--- | :--- | :--- |
-| `-f` | `--fps` | Set the frame rate | `15–120` (default: 30) |
+| `-f` | `--fps` | Set the frame rate | `15–120` (default: `30`) |
+| `-t` | `--theme` | Set theme (default: `std`) | — |
 | `-n-c` | `--no-color` | Disable colors (ASCII mode) | — |
 | `-h` | `--help` | Show the help menu | — |
 
 ### 🎨 Themes
 
-| Flag | Theme |
+> [!TIP]
+>  Usage: -t or --theme [name]
+
+| Theme | Description |
 | :--- | :--- |
-| `-s`, `--std` | Classic orange fire (default) |
-| `-i`, `--ice` | Icy flame (blue tones) |
-| `-c`, `--classic` | Alternative retro-style fire |
-| `-p`, `--pink` | Pink neon fire |
-| `-b`, `--blue` | Blue neon flame |
+| `ash` | monochrome smoke & gray fire |
+| `blue` | blue neon fire |
+| `classic` | alternative classic fire |
+| `copper` | turquoise copper-oxide flame |
+| `crimson` | aggressive crimson-red fire |
+| `ember` | glowing amber coals |
+| `emerald` | deep emerald chemical fire |
+| `forest` | mystical green fire |
+| `ghost` | ethereal violet magic flame |
+| `gold` | luxury metallic golden shimmer |
+| `ice` | ice fire |
+| `magma` | viscous glow of molten lava |
+| `nebula` | cosmic pink & blue fire |
+| `pink` | pink neon fire |
+| `plasma` | electric indigo plasma |
+| `rainbow` | multicolor spectrum fire |
+| `solar` | blinding white-hot solar flares |
+| `std` | classic fire |
+| `sulfur` | ghostly blue flame |
+| `custom` | use a user-defined theme |
+
+
+>  Custom Theme Format: 
+```
+custom:#hex.#hex.#hex.#hex
+```
+>  Provide 1 to 4 HEX colors separated by dots (e.g., custom:\#ff0000.\#00ff00)
 
 ### 💡 Example Commands
 
 ```bash
-# Launch ice fire at 60 FPS
-fire -i -f 60
-
-# Blue flame at 45 FPS
-fire --blue --fps 45
-
-# Classic ASCII art without color
-fire --no-color
+fire-cli -f 60
+fire-cli --theme copper --fps 45
+fire-cli -t custom:#ff0055.#ffcc00.#ffffff
 ```
 
 ---
