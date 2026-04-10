@@ -139,29 +139,28 @@ winget install Horizon.Fire
 > [!TIP]
 > Использование: -t или --theme [название]
 
-| Тема | Описание |
-| :--- | :--- |
-| `ash` | монохромный дым и серый огонь |
-| `blue` | синий неоновый огонь |
-| `classic` | альтернативный классический огонь |
-| `copper` | бирюзовое пламя оксида меди |
-| `crimson` | агрессивный литиево-красный огонь |
-| `ember` | уютное свечение углей |
-| `emerald` | глубокий изумрудный химический огонь |
-| `forest` | мистический лесной зеленый огонь |
-| `ghost` | эфирное фиолетовое магическое пламя |
-| `gold` | роскошное золотое металлическое сияние |
-| `ice` | ледяной огонь |
-| `magma` | вязкое свечение раскаленной лавы |
-| `nebula` | космическая смесь розового и синего |
-| `pink` | розовый неоновый огонь |
-| `plasma` | яркая индиго-аргоновая плазма |
-| `rainbow` | многоцветный радужный спектр |
-| `solar` | ослепительные бело-горячие солнечные вспышки |
-| `std` | классический огонь |
-| `sulfur` | призрачное синее пламя серы |
-| `custom` | пользовательская тема |
-
+| Тема | Вид | Описание |
+| :--- | :---: | :--- |
+| `ash` | ![ash](.github/images/ash.png) | монохромный дым и серый огонь |
+| `blue` | ![blue](.github/images/blue.png) | синий неоновый огонь |
+| `classic` | ![classic](.github/images/classic.png) | альтернативный классический огонь |
+| `copper` | ![copper](.github/images/copper.png) | бирюзовое пламя оксида меди |
+| `crimson` | ![crimson](.github/images/crimson.png) | агрессивный литиево-красный огонь |
+| `ember` | ![ember](.github/images/ember.png) | уютное свечение углей |
+| `emerald` | ![emerald](.github/images/emerald.png) | глубокий изумрудный химический огонь |
+| `forest` | ![forest](.github/images/forest.png) | мистический лесной зеленый огонь |
+| `ghost` | ![ghost](.github/images/ghost.png) | эфирное фиолетовое магическое пламя |
+| `gold` | ![gold](.github/images/gold.png) | роскошное золотое металлическое сияние |
+| `ice` | ![ice](.github/images/ice.png) | ледяной огонь |
+| `magma` | ![magma](.github/images/magma.png) | вязкое свечение раскаленной лавы |
+| `nebula` | ![nebula](.github/images/nebula.png) | космическая смесь розового и синего |
+| `pink` | ![nebula](.github/images/nebula.png) | розовый неоновый огонь |
+| `plasma` | ![plasma](.github/images/plasma.png) | яркая индиго-аргоновая плазма |
+| `rainbow` | ![rainbow](.github/images/rainbow.png) | многоцветный радужный спектр |
+| `solar` | ![solar](.github/images/solar.png) | ослепительные бело-горячие солнечные вспышки |
+| `std` | ![std](.github/images/std.png) | классический огонь |
+| `sulfur` | ![sulfur](.github/images/sulfur.png) | призрачное синее пламя серы |
+| `custom` | — | пользовательская тема |
 > Формат пользовательской темы:
 ```
 custom:#hex.#hex.#hex.#hex

@@ -140,28 +140,28 @@ Launch the animation with the simple `fire-cli` command. Use the following flags
 > [!TIP]
 >  Usage: -t or --theme [name]
 
-| Theme | Description |
-| :--- | :--- |
-| `ash` | monochrome smoke & gray fire |
-| `blue` | blue neon fire |
-| `classic` | alternative classic fire |
-| `copper` | turquoise copper-oxide flame |
-| `crimson` | aggressive crimson-red fire |
-| `ember` | glowing amber coals |
-| `emerald` | deep emerald chemical fire |
-| `forest` | mystical green fire |
-| `ghost` | ethereal violet magic flame |
-| `gold` | luxury metallic golden shimmer |
-| `ice` | ice fire |
-| `magma` | viscous glow of molten lava |
-| `nebula` | cosmic pink & blue fire |
-| `pink` | pink neon fire |
-| `plasma` | electric indigo plasma |
-| `rainbow` | multicolor spectrum fire |
-| `solar` | blinding white-hot solar flares |
-| `std` | classic fire |
-| `sulfur` | ghostly blue flame |
-| `custom` | use a user-defined theme |
+| Theme | Preview | Description |
+| :--- | :---: | :--- |
+| `ash` | ![ash](.github/images/ash.png) | monochrome smoke & gray fire |
+| `blue` | ![blue](.github/images/blue.png) | blue neon fire |
+| `classic` | ![classic](.github/images/classic.png) | alternative classic fire |
+| `copper` | ![copper](.github/images/copper.png) | turquoise copper-oxide flame |
+| `crimson` | ![crimson](.github/images/crimson.png) | aggressive crimson-red fire |
+| `ember` | ![ember](.github/images/ember.png) | glowing amber coals |
+| `emerald` | ![emerald](.github/images/emerald.png) | deep emerald chemical fire |
+| `forest` | ![forest](.github/images/forest.png) | mystical green fire |
+| `ghost` | ![ghost](.github/images/ghost.png) | ethereal violet magic flame |
+| `gold` | ![gold](.github/images/gold.png) | luxury metallic golden shimmer |
+| `ice` | ![ice](.github/images/ice.png) | ice fire |
+| `magma` | ![magma](.github/images/magma.png) | viscous glow of molten lava |
+| `nebula` | ![nebula](.github/images/nebula.png) | cosmic pink & blue fire |
+| `pink` | ![pink](.github/images/pink.png) | pink neon fire |
+| `plasma` | ![plasma](.github/images/plasma.png) | electric indigo plasma |
+| `rainbow` | ![rainbow](.github/images/rainbow.png) | multicolor spectrum fire |
+| `solar` | ![solar](.github/images/solar.png) | blinding white-hot solar flares |
+| `std` | ![std](.github/images/std.png) | classic fire |
+| `sulfur` | ![sulfur](.github/images/sulfur.png) | ghostly blue flame |
+| `custom` | — | use a user-defined theme |
 
 
 >  Custom Theme Format: 
