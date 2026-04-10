@@ -178,6 +178,9 @@ fire-cli --theme copper --fps 45
 fire-cli -t custom:#ff0055.#ffcc00.#ffffff
 ```
 
+### ⌨️ Controls
+* **ESC** or **Ctrl+C** — Exit the program.
+
 ---
 
 ## 📖 Contribution Guide
