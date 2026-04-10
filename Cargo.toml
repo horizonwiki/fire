@@ -1,11 +1,15 @@
 [package]
-name = "fire"
-version = "0.1.1"
+name = "fire-cli"
+version = "0.1.2"
 edition = "2021"
 license = "Apache-2.0"
 repository = "https://github.com/horizonwiki/fire"
 authors = ["horizonwiki"]
 keywords = ["terminal", "animation", "rust", "ascii", "fire", "visualization"]
+
+[[bin]]
+name = "fire-cli"
+path = "src/main.rs"
 
 [dependencies]
 libc = "0.2"
