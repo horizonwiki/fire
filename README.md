@@ -115,6 +115,14 @@ Download the compiled binary for your architecture from the **[Releases](https:/
 * **Windows**: Download `fire-cli.exe`, move it to a convenient folder, and add that folder to your system `PATH`.
 * **Linux/macOS**: Download `fire-cli`, make it executable (`chmod +x fire-cli`), and move it to `/usr/local/bin/`.
 
+### 🐧 Linux
+**Arch Linux (AUR)**
+```bash
+yay -S fire-cli
+```
+*Alternatively, use any other AUR helper like `paru`.*
+
+
 ### 🪟 Windows (Winget)
 
 ```powershell

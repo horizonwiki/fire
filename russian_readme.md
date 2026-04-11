@@ -112,6 +112,13 @@ sudo cp target/release/fire-cli /usr/local/bin/
 * **Windows**: Скачайте `fire-cli.exe`, переместите в удобную папку и добавьте её в системный `PATH`.
 * **Linux/macOS**: Скачайте файл `fire-cli`, выдайте права на исполнение (`chmod +x fire-cli`) и переместите в `/usr/local/bin/`.
 
+### 🐧 Linux
+**Arch Linux (AUR)**
+```bash
+yay -S fire-cli
+```
+*В качестве альтернативы можно использовать любой другой инструмент AUR, например `paru`.*
+
 ### 🪟 Windows (Winget)
 
 ```powershell
