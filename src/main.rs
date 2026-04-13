@@ -1,4 +1,4 @@
-// Fire-CLI || Github: https://github.com/horizonwiki/fire || v0.1.2 || 10.04.2026
+// Fire-CLI || Github: https://github.com/horizonwiki/fire || v0.1.3 || 2026-04-13
 use std::{env, io};
 
 mod terminal;
@@ -12,6 +12,7 @@ use terminal::Terminal;
 use theme::{Theme, ColorMode};
 use help::print_help;
 use renderer::run_main_loop;
+use fire_cli::{VERSION, BUILD_DATE};
 
 fn main() -> io::Result<()> {
     let args: Vec<String> = env::args().collect();
@@ -30,25 +31,30 @@ fn main() -> io::Result<()> {
                     let theme_arg = args[i + 1].to_lowercase();
                     let theme_str = theme_arg.as_str();
                     match theme_str {
-                        "std"     => theme = Theme::std(),
-                        "ice"     => theme = Theme::ice(),
-                        "classic" => theme = Theme::classic(),
-                        "pink"    => theme = Theme::pink(),
+                        "ash"     => theme = Theme::ash(),
+                        "aurora"  => theme = Theme::aurora(),
                         "blue"    => theme = Theme::blue(),
-                        "forest"  => theme = Theme::forest(),
-                        "magma"   => theme = Theme::magma(),
-                        "solar"   => theme = Theme::solar(),
-                        "plasma"  => theme = Theme::plasma(),
-                        "sulfur"  => theme = Theme::sulfur(),
-                        "emerald" => theme = Theme::emerald(),
+                        "classic" => theme = Theme::classic(),
+                        "copper"  => theme = Theme::copper(),
                         "crimson" => theme = Theme::crimson(),
+                        "dusk"    => theme = Theme::dusk(),
+                        "ember"   => theme = Theme::ember(),
+                        "emerald" => theme = Theme::emerald(),
+                        "forest"  => theme = Theme::forest(),
+                        "frost"   => theme = Theme::frost(),
                         "ghost"   => theme = Theme::ghost(),
                         "gold"    => theme = Theme::gold(),
-                        "ash"     => theme = Theme::ash(),
-                        "copper"  => theme = Theme::copper(),
+                        "ice"     => theme = Theme::ice(),
+                        "magma"   => theme = Theme::magma(),
                         "nebula"  => theme = Theme::nebula(),
-                        "ember"   => theme = Theme::ember(),
+                        "pink"    => theme = Theme::pink(),
+                        "plasma"  => theme = Theme::plasma(),
                         "rainbow" => color_mode = ColorMode::Rainbow,
+                        "sakura"  => theme = Theme::sakura(),
+                        "solar"   => theme = Theme::solar(),
+                        "std"     => theme = Theme::std(),
+                        "sulfur"  => theme = Theme::sulfur(),
+
                         "custom"  => {
                             eprintln!("Missing colors after 'custom:'. Example: -t custom:#ff0055.#ffcc00.#ffffff");
                             print_help(program_name);
@@ -97,6 +103,15 @@ fn main() -> io::Result<()> {
             "--no-color" | "-n-c" | "--nocolor" => use_color = false,
             "-h" | "--help"  => {
                 print_help(program_name);
+                return Ok(());
+            }
+            "-v" | "--version" => {
+                println!("fire-cli v{} ({}-{}) built {}",
+                VERSION,
+                std::env::consts::ARCH,
+                std::env::consts::OS,
+                BUILD_DATE
+                );
                 return Ok(());
             }
             _ => {

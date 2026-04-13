@@ -6,29 +6,34 @@ Usage:
 
 Options:
   -f,    --fps <number>   - set FPS (default: 30, range: 15-120)
-  -t,    --theme <name>   - set theme (default: std)
   -n-c,  --no-color       - disable colors (ASCII only)
+  -t,    --theme <name>   - set theme (default: std)
+  -v,    --version        - show version info
 
 Available themes:
-  ash         - monochrome smoke & gray fire
-  blue        - blue neon fire
-  classic     - alternative classic fire
-  copper      - turquoise copper-oxide flame
-  crimson     - aggressive crimson-red fire
-  ember       - glowing amber coals
-  emerald     - deep emerald chemical fire
-  forest      - mystical green fire
-  ghost       - ethereal violet magic flame
-  gold        - luxury metallic golden shimmer
-  ice         - ice fire
-  magma       - viscous glow of molten lava
-  nebula      - cosmic pink & blue fire
-  pink        - pink neon fire
-  plasma      - electric indigo plasma
-  rainbow     - multicolor spectrum fire
-  solar       - blinding white-hot solar flares
-  std         - classic fire
-  sulfur      - ghostly blue flame
+  ash     - monochrome smoke & gray fire
+  aurora  - shifting green-teal northern lights
+  blue    - blue neon fire
+  classic - alternative classic fire
+  copper  - turquoise copper-oxide flame
+  crimson - aggressive crimson-red fire
+  dusk    - warm orange-purple sunset fire
+  ember   - glowing amber coals
+  emerald - deep emerald chemical fire
+  forest  - mystical green fire
+  frost   - cold blue-white icy fire
+  ghost   - ethereal violet magic flame
+  gold    - luxury metallic golden shimmer
+  ice     - ice fire
+  magma   - viscous glow of molten lava
+  nebula  - cosmic pink & blue fire
+  pink    - pink neon fire
+  plasma  - electric indigo plasma
+  rainbow - multicolor spectrum fire
+  sakura  - soft pink cherry blossom fire
+  solar   - blinding white-hot solar flares
+  std     - classic fire
+  sulfur  - ghostly blue flame
 
   custom      - use a user-defined theme (see format below)
 

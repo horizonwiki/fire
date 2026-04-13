@@ -1,17 +1,23 @@
 [package]
 name = "fire-cli"
-version = "0.1.2"
+version = "0.1.3"
 edition = "2021"
+description = "Terminal fire animation written in Rust."
 license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/horizonwiki/fire"
 repository = "https://github.com/horizonwiki/fire"
 authors = ["horizonwiki"]
-keywords = ["terminal", "animation", "rust", "ascii", "fire", "visualization"]
+keywords = ["terminal", "animation", "rust", "ascii", "fire"]
+categories = ["command-line-utilities", "visualization"]
+
+include = ["src/**", "Cargo.toml", "Cargo.lock", "README.md", "LICENSE"]
 
 [[bin]]
 name = "fire-cli"
 path = "src/main.rs"
 
-[dependencies]
+[target.'cfg(unix)'.dependencies]
 libc = "0.2"
 
 [target.'cfg(windows)'.dependencies]
