@@ -64,6 +64,16 @@
 
 > ❕ Для компиляции и запуска **Fire CLI** в вашей системе должен быть установлен актуальный стек [**Rust**](https://www.rust-lang.org/tools/install) (cargo, rustc).
 
+### 🚀 Установка (рекомендуется)
+
+Установить через [Cargo](https://doc.rust-lang.org/cargo/):
+
+```bash
+cargo install fire-cli-rs
+```
+
+Работает на **Linux**, **macOS** и **Windows** — Cargo автоматически скомпилирует бинарный файл для вашей системы.
+
 ### 1. Сборка из исходников
 
 Склонируйте репозиторий и соберите оптимизированный бинарный файл:
@@ -119,11 +129,6 @@ yay -S fire-cli
 ```
 *В качестве альтернативы можно использовать любой другой инструмент AUR, например `paru`.*
 
-### 🪟 Windows (Winget)
-
-```powershell
-winget install Horizon.Fire
-```
 ---
 
 ## 🎮 Использование и управление
@@ -138,7 +143,7 @@ winget install Horizon.Fire
 | `-t` | `--theme` | Выбрать тему (по умолчанию: `std`) | — |
 | `-n-c` | `--no-color` | Отключить цвета (только ASCII) | — |
 | `-h` | `--help` | Показать меню справки | — |
-
+| `-v`| `--version`| Показать информацию о версии | — |
 ### 🎨 Темы
 
 > [!TIP]
@@ -147,21 +152,25 @@ winget install Horizon.Fire
 | Тема | Вид | Описание |
 | :--- | :---: | :--- |
 | `ash` | ![ash](.github/images/ash.png) | монохромный дым и серый огонь |
+| `aurora` | ![aurora](.github/images/aurora.png) | зелено-бирюзовое северное сияние |
 | `blue` | ![blue](.github/images/blue.png) | синий неоновый огонь |
 | `classic` | ![classic](.github/images/classic.png) | альтернативный классический огонь |
 | `copper` | ![copper](.github/images/copper.png) | бирюзовое пламя оксида меди |
 | `crimson` | ![crimson](.github/images/crimson.png) | агрессивный литиево-красный огонь |
+| `dusk` | ![dusk](.github/images/dusk.png) | теплое оранжево-пурпурное пламя заката |
 | `ember` | ![ember](.github/images/ember.png) | уютное свечение углей |
 | `emerald` | ![emerald](.github/images/emerald.png) | глубокий изумрудный химический огонь |
 | `forest` | ![forest](.github/images/forest.png) | мистический лесной зеленый огонь |
+| `frost` | ![frost](.github/images/frost.png) | холодный сине-белый ледяной огонь |
 | `ghost` | ![ghost](.github/images/ghost.png) | эфирное фиолетовое магическое пламя |
 | `gold` | ![gold](.github/images/gold.png) | роскошное золотое металлическое сияние |
 | `ice` | ![ice](.github/images/ice.png) | ледяной огонь |
 | `magma` | ![magma](.github/images/magma.png) | вязкое свечение раскаленной лавы |
 | `nebula` | ![nebula](.github/images/nebula.png) | космическая смесь розового и синего |
-| `pink` | ![nebula](.github/images/nebula.png) | розовый неоновый огонь |
+| `pink` | ![nebula](.github/images/pink.png) | розовый неоновый огонь |
 | `plasma` | ![plasma](.github/images/plasma.png) | яркая индиго-аргоновая плазма |
 | `rainbow` | ![rainbow](.github/images/rainbow.png) | многоцветный радужный спектр |
+| `sakura` | ![sakura](.github/images/sakura.png) | нежно-розовое пламя цветущей вишни |
 | `solar` | ![solar](.github/images/solar.png) | ослепительные бело-горячие солнечные вспышки |
 | `std` | ![std](.github/images/std.png) | классический огонь |
 | `sulfur` | ![sulfur](.github/images/sulfur.png) | призрачное синее пламя серы |

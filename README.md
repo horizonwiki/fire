@@ -67,6 +67,18 @@ On legacy systems (Windows 10 and below), standard consoles like `cmd.exe` or `P
 
 > ❕ To compile and run **Fire CLI**, you need an up-to-date [**Rust**](https://www.rust-lang.org/tools/install) toolchain (cargo, rustc) installed.
 
+### 🚀 Installation (Recommended)
+
+Install via [Cargo](https://doc.rust-lang.org/cargo/):
+
+```bash
+cargo install fire-cli-rs
+```
+
+Works on **Linux**, **macOS**, and **Windows** — Cargo will compile the binary for your system automatically.
+
+---
+
 ### 1. Building from Source
 
 Clone the repository and build an optimized binary:
@@ -122,13 +134,6 @@ yay -S fire-cli
 ```
 *Alternatively, use any other AUR helper like `paru`.*
 
-
-### 🪟 Windows (Winget)
-
-```powershell
-winget install Horizon.Fire
-```
-
 ---
 
 ## 🎮 Usage & Controls
@@ -143,7 +148,7 @@ Launch the animation with the simple `fire-cli` command. Use the following flags
 | `-t` | `--theme` | Set theme (default: `std`) | — |
 | `-n-c` | `--no-color` | Disable colors (ASCII mode) | — |
 | `-h` | `--help` | Show the help menu | — |
-
+| `-v`| `--version`| Show version info | — |
 ### 🎨 Themes
 
 > [!TIP]
@@ -152,13 +157,16 @@ Launch the animation with the simple `fire-cli` command. Use the following flags
 | Theme | Preview | Description |
 | :--- | :---: | :--- |
 | `ash` | ![ash](.github/images/ash.png) | monochrome smoke & gray fire |
+| `aurora` | ![aurora](.github/images/aurora.png) | green-teal northern lights |
 | `blue` | ![blue](.github/images/blue.png) | blue neon fire |
 | `classic` | ![classic](.github/images/classic.png) | alternative classic fire |
 | `copper` | ![copper](.github/images/copper.png) | turquoise copper-oxide flame |
 | `crimson` | ![crimson](.github/images/crimson.png) | aggressive crimson-red fire |
+| `dusk` | ![dusk](.github/images/dusk.png) | warm orange-purple sunset fire |
 | `ember` | ![ember](.github/images/ember.png) | glowing amber coals |
 | `emerald` | ![emerald](.github/images/emerald.png) | deep emerald chemical fire |
 | `forest` | ![forest](.github/images/forest.png) | mystical green fire |
+| `frost` | ![frost](.github/images/frost.png) | cold blue-white icy fire |
 | `ghost` | ![ghost](.github/images/ghost.png) | ethereal violet magic flame |
 | `gold` | ![gold](.github/images/gold.png) | luxury metallic golden shimmer |
 | `ice` | ![ice](.github/images/ice.png) | ice fire |
@@ -167,6 +175,7 @@ Launch the animation with the simple `fire-cli` command. Use the following flags
 | `pink` | ![pink](.github/images/pink.png) | pink neon fire |
 | `plasma` | ![plasma](.github/images/plasma.png) | electric indigo plasma |
 | `rainbow` | ![rainbow](.github/images/rainbow.png) | multicolor spectrum fire |
+| `sakura` | ![sakura](.github/images/sakura.png) | soft pink cherry blossom fire |
 | `solar` | ![solar](.github/images/solar.png) | blinding white-hot solar flares |
 | `std` | ![std](.github/images/std.png) | classic fire |
 | `sulfur` | ![sulfur](.github/images/sulfur.png) | ghostly blue flame |
